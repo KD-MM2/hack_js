@@ -15,12 +15,7 @@ if (url.indexOf(setfree) != -1) {
 
 if (!obj.data.isFree) {
     obj.data.isFree = true;
-    if (obj.data.pictureList) {
-        for (var i = 0; i < obj.data.pictureList.length; i++) {
-            obj.data.pictureList[i].isFree = true;
-        }
-        body = JSON.stringify(obj);
-    }
+    body = JSON.stringify(obj);
 }
 
 if (url.indexOf(userinfo) != -1) {
