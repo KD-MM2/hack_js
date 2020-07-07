@@ -6,7 +6,6 @@ const userinfo = '/userInfo';
 
 const setfree = '/special/queryByCatalogAll';
 
-obj.data.isFree = true;
 if (url.indexOf(setfree) != -1) {
     for (var i = 0; i < obj.data.length; i++) {
         obj.data[i].isFree = true;
@@ -15,8 +14,8 @@ if (url.indexOf(setfree) != -1) {
 }
 
 if (url.indexOf(userinfo) != -1) {
-    obj.data.level = 5;
-    obj.data.expireTime = 4070965662;
+    obj.data.level = 8;
+    obj.data.expireTime = 1800000000;
     body = JSON.stringify(obj);
 }
 
