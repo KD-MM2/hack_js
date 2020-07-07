@@ -6,15 +6,11 @@ const userinfo = '/userInfo';
 
 const setfree = '/special/queryByCatalogAll';
 
+obj.data.isFree = true;
 if (url.indexOf(setfree) != -1) {
     for (var i = 0; i < obj.data.length; i++) {
         obj.data[i].isFree = true;
     }
-    body = JSON.stringify(obj);
-}
-
-if (!obj.data.isFree) {
-    obj.data.isFree = true;
     body = JSON.stringify(obj);
 }
 
